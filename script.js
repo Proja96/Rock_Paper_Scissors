@@ -57,22 +57,21 @@ function playRound(playerSelection, computerSelection) {
         }
     }
  };
-let computerSelection = getComputerChoice();
 let rock = document.getElementById('rock');
 rock.addEventListener("click", () => {
-    playRound('rock', computerSelection);
+    playRound('rock', getComputerChoice());
     div.textContent = 'player = ' + player + ' computer = ' + pc;
 });
 
 let paper = document.getElementById('paper');
 paper.addEventListener("click", () => {
-    playRound('paper', computerSelection);
+    playRound('paper', getComputerChoice());
     div.textContent = 'player = ' + player + ' computer = ' + pc;
 });
 
 let scissors = document.getElementById('scissors');
 scissors.addEventListener("click", () => {
-    playRound('scissors', computerSelection);
+    playRound('scissors', getComputerChoice());
     div.textContent = 'player = ' + player + ' computer = ' + pc;
 });
 
